@@ -1,56 +1,104 @@
-public class PartTimeTeacher{
-    private String skills;
-//    private String recruiterName;
-//    private int recruiterId;
-    private double salary;
+import java.util.Scanner;
+
+public class PartTimeTeacher extends User{
+
+
+    private int teacherid;
+    private String teachername;
+    private String nativelanguage;
+    private int teachinglevel;
+    private int studentaffinity;
+    private int studytime;
+
+
+
+    public void login() {
+        System.out.println("PartTime teacher login");
+        System.out.println("Please input your CourseDirector ID");
+        Scanner input = new Scanner(System.in);
+        int Id = input.nextInt();
+        System.out.println("Please input your Password");
+        Scanner String = new Scanner(System.in);
+        String password = input.next();
+        //加入表单验证
+    }
 
     Training training = Training.getTraining();
+
 
     private static PartTimeTeacher partTimeTeacher=new PartTimeTeacher();
     // 构造方法设置为私有
     private PartTimeTeacher(){
     }
     //创建一个方法，返回的就是new创建好的对象
-    public static PartTimeTeacher partTimeTeacher(){
+    public static PartTimeTeacher getpartTimeTeacher(){
         return partTimeTeacher;
     }
 
-    public void createRequest(){
-
-    }
-    public void showTimetable(){
-
+    public void showmypersonalprofile(){
+        System.out.println(teacherid+ '\n'+teachername+'\n'+nativelanguage+
+                '\n'+teachinglevel+'\n'+studentaffinity);
     }
 
-    public String getSkills() {
-        return skills;
+    public void takeTraining(){
+        System.out.println("Please input your CourseDirector ID");
+        Scanner input = new Scanner(System.in);
+        int studytime =input.nextInt();
+        teachinglevel = training.takeTraining(teachinglevel,studytime);
     }
 
-    public void setSkills(String skills) {
-        this.skills = skills;
+
+    public int getTeacherid() {
+        return teacherid;
     }
 
-//    public String getRecruiterName() {
-//        return recruiterName;
-//    }
-//
-//    public void setRecruiterName(String recruiterName) {
-//        this.recruiterName = recruiterName;
-//    }
-//
-//    public int getRecruiterId() {
-//        return recruiterId;
-//    }
-//
-//    public void setRecruiterId(int recruiterId) {
-//        this.recruiterId = recruiterId;
-//    }
-
-    public double getSalary() {
-        return salary;
+    public void setTeacherid(int teacherid) {
+        this.teacherid = teacherid;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public String getTeachername() {
+        return teachername;
     }
+
+    public void setTeachername(String teachername) {
+        this.teachername = teachername;
+    }
+
+    public String getNativelanguage() {
+        return nativelanguage;
+    }
+
+    public void setNativelanguage(String nativelanguage) {
+        this.nativelanguage = nativelanguage;
+    }
+
+    public int getTeachinglevel() {
+        return teachinglevel;
+    }
+
+    public void setTeachinglevel(int teachinglevel) {
+        this.teachinglevel = teachinglevel;
+    }
+
+    public int getStudentaffinity() {
+        return studentaffinity;
+    }
+
+    public void setStudentaffinity(int studentaffinity) {
+        this.studentaffinity = studentaffinity;
+    }
+
+    public int getStudytime() {
+        return studytime;
+    }
+
+    public void setStudytime(int studytime) {
+        this.studytime = studytime;
+    }
+
+    public static PartTimeTeacher getPartTimeTeacher() {
+        return partTimeTeacher;
+    }
+
+
 }

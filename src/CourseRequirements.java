@@ -87,7 +87,5 @@ public class CourseRequirements {
         return courseRequirements;
     }
 
-    public static void setCourseRequirements(CourseRequirements courseRequirements) {
-        CourseRequirements.courseRequirements = courseRequirements;
-    }
+
 }

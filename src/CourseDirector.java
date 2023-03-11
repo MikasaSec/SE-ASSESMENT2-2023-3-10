@@ -16,7 +16,6 @@ public class CourseDirector extends User {
     CourseRequirements courseRequirements = CourseRequirements.getcourseRequirements();
 
 
-
     public void createCourseRequirements() {
         System.out.println("Please type course Name");
         Scanner a = new Scanner(System.in);

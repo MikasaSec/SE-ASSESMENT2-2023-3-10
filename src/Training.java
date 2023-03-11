@@ -5,6 +5,7 @@ public class Training {
     private String teacherName;
     private int adminId;
     private String adminName;
+
     private static Training training=new Training();
     // 构造方法设置为私有
     private Training(){
@@ -12,6 +13,11 @@ public class Training {
     //创建一个方法，返回的就是new创建好的对象
     public static Training getTraining(){
         return training;
+    }
+
+    public int takeTraining(int teachinglevel,int studytime){
+        teachinglevel = teachinglevel+2*studytime;
+        return teachinglevel;
     }
 
     public int getTrainingteacherId() {

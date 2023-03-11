@@ -3,12 +3,10 @@ public abstract class User {
     private String name;
     private String password;
     private String email;
-    public void register() {
-    }
-    public void login() {
-    }
-    public void updateProfile() {
-    }
+
+
+    public abstract void login();//登陆方法
+
 
     public int getUserId() {
         return userId;

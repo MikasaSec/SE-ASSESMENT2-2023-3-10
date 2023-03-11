@@ -1,9 +1,9 @@
-public class PartTimeTeacher extends User{
+public class PartTimeTeacher{
     private String skills;
 //    private String recruiterName;
 //    private int recruiterId;
     private double salary;
-    Course course = Course.getcourse();
+
     Training training = Training.getTraining();
 
     private static PartTimeTeacher partTimeTeacher=new PartTimeTeacher();

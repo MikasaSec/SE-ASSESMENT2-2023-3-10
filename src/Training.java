@@ -1,7 +1,6 @@
 public class Training {
-    private int trainingId;
-    private String trainingName;
-    private String trainingDetail;
+    private int trainingteacherId;
+    private String trainingteacherName;
     private int teacherId;
     private String teacherName;
     private int adminId;
@@ -15,28 +14,20 @@ public class Training {
         return training;
     }
 
-    public int getTrainingId() {
-        return trainingId;
+    public int getTrainingteacherId() {
+        return trainingteacherId;
     }
 
-    public void setTrainingId(int trainingId) {
-        this.trainingId = trainingId;
+    public void setTrainingteacherId(int trainingteacherId) {
+        this.trainingteacherId = trainingteacherId;
     }
 
-    public String getTrainingName() {
-        return trainingName;
+    public String getTrainingteacherName() {
+        return trainingteacherName;
     }
 
-    public void setTrainingName(String trainingName) {
-        this.trainingName = trainingName;
-    }
-
-    public String getTrainingDetail() {
-        return trainingDetail;
-    }
-
-    public void setTrainingDetail(String trainingDetail) {
-        this.trainingDetail = trainingDetail;
+    public void setTrainingteacherName(String trainingteacherName) {
+        this.trainingteacherName = trainingteacherName;
     }
 
     public int getTeacherId() {
@@ -69,5 +60,9 @@ public class Training {
 
     public void setAdminName(String adminName) {
         this.adminName = adminName;
+    }
+
+    public static void setTraining(Training training) {
+        Training.training = training;
     }
 }

@@ -2,16 +2,12 @@
 //and write updated information to txt files.
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class ReadWriteFiles {
 
-
-    public ArrayList<String> readFile(){
-        String filepath = "users.txt";
+    public ArrayList<String> readFile(String filepath) {
 
         ArrayList<String> lines = new ArrayList<String>();
         try {
@@ -29,6 +25,25 @@ public class ReadWriteFiles {
 
     }
 
+    public void writeFile(ArrayList<String> modifiedUserData) {
+        try {
+            FileWriter writer = new FileWriter("users.txt");
+            BufferedWriter buffer = new BufferedWriter(writer);
 
+            for (String data : modifiedUserData) {
+                buffer.write(data);
+                buffer.newLine();
+            }
 
+            buffer.flush();
+            buffer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
+
+
+
+
+

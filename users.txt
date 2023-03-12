@@ -1,5 +1,5 @@
-ID Name Skill level studentAffinity roleCode(1.CourseDirector2.Administrator3.PartTimeTeacher)
-1 Jack English 3 2 1
-2 wang English 4 2 2
-3 lily English 1 2 3
-4 Jack Chinese 3 2 3
+ID password Name Subject level studentAffinity roleCode(1.CourseDirector2.Administrator3.PartTimeTeacher)
+1 abc Jack Math 3 2 1
+2 abc wang Chemistry 4 2 2
+3 abc lily Physics 1 2 3
+4 abc Jack Music 4 2 3

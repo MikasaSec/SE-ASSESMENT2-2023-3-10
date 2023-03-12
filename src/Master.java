@@ -2,18 +2,16 @@ import java.util.ArrayList;
 
 public class Master {
     int roleCode = -1;
-    boolean validID = false;
 
-    public User getUserRole(int ID) {
-        ArrayList<String> userFile = new ReadWriteFiles().readFile();
+    public User getUserRole(String ID) {
+
         User user = null;
-        boolean validID = false;
-        for (String contents : userFile) {
+
+        for (String contents : UserAction.userData) {
             String[] content = contents.split(" ");
-            if (content[0].equals(String.valueOf(ID))) {
-                validID = true;
+            if (content[0].equals(ID)) {
                 try {
-                    int roleCode = Integer.parseInt(content[5]);
+                    int roleCode = Integer.parseInt(content[content.length-1]);
                     switch (roleCode) {
                         case 1:
                             user = new CourseDirector();
@@ -22,40 +20,37 @@ public class Master {
                             user = new Administrator();
                             break;
                         case 3:
-                            user = PartTimeTeacher.getpartTimeTeacher();
+                            user = new PartTimeTeacher();
                             break;
                         default:
                             System.out.println("Error, we cannot find your role in the system");
                             break;
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Invalid role code: " + content[5]);
+                    System.out.println("Invalid role code: " + content[content.length-1]);
                 }
                 break;
             }
         }
-        if (!validID) {
-            System.out.println("The input ID is invalid");
-        }
+
         return user;
     }
 
 
-    public void login(User user) {
-        user.login();
-    }
-
     public void run(User user) {
         if (user instanceof CourseDirector) {
+            System.out.println("Welcome, CourseDirector");
             CourseDirector courseDirector = (CourseDirector) user;
             courseDirector.createCourseRequirements();
         } else if (user instanceof Administrator) {
+            System.out.println("Welcome, Administrator");
             Administrator administrator = (Administrator) user;
             administrator.showCourseRequirements();
             administrator.selectPartTimeTeacher();
         } else if (user instanceof PartTimeTeacher) {
+            System.out.println("Welcome, PartTimeTeacher");
             PartTimeTeacher partTimeTeacher = (PartTimeTeacher) user;
-//            courseDirector.catchingFlyDisk();
+
         }
     }
 }

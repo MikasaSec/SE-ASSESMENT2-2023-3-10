@@ -3,11 +3,9 @@ public class CourseRequirements {
     private String courseName;
     private String start_time;
     private String duration;
-    private String nativelanguage;
-    private int teachinglevel;
-    private int studentaffinity;
-    private int courseDirectorId;
-    private String courseDirectorName;
+    private String subject;
+    private String teachinglevel;
+    private String studentaffinity;
 
     private static CourseRequirements courseRequirements=new CourseRequirements();
 
@@ -43,48 +41,28 @@ public class CourseRequirements {
         this.duration = duration;
     }
 
-    public String getNativelanguage() {
-        return nativelanguage;
+    public String getSubject() {
+        return subject;
     }
 
-    public void setNativelanguage(String nativelanguage) {
-        this.nativelanguage = nativelanguage;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
-    public int getTeachinglevel() {
+    public String getTeachinglevel() {
         return teachinglevel;
     }
 
-    public void setTeachinglevel(int teachinglevel) {
+    public void setTeachinglevel(String teachinglevel) {
         this.teachinglevel = teachinglevel;
     }
 
-    public int getStudentaffinity() {
+    public String getStudentaffinity() {
         return studentaffinity;
     }
 
-    public void setStudentaffinity(int studentaffinity) {
+    public void setStudentaffinity(String studentaffinity) {
         this.studentaffinity = studentaffinity;
-    }
-
-    public int getCourseDirectorId() {
-        return courseDirectorId;
-    }
-
-    public void setCourseDirectorId(int courseDirectorId) {
-        this.courseDirectorId = courseDirectorId;
-    }
-
-    public String getCourseDirectorName() {
-        return courseDirectorName;
-    }
-
-    public void setCourseDirectorName(String courseDirectorName) {
-        this.courseDirectorName = courseDirectorName;
-    }
-
-    public static CourseRequirements getCourseRequirements() {
-        return courseRequirements;
     }
 
 

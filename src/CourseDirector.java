@@ -1,61 +1,63 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class CourseDirector extends User {
 
-    public void login() {
-        System.out.println("CourseDirector login");
-        System.out.println("Please input your CourseDirector ID");
-        Scanner input = new Scanner(System.in);
-        int Id = input.nextInt();
-        System.out.println("Please input your Password");
-        Scanner String = new Scanner(System.in);
-        String password = input.next();
-        //加入表单验证
-    }
+
 
     CourseRequirements courseRequirements = CourseRequirements.getcourseRequirements();
 
 
     public void createCourseRequirements() {
-        System.out.println("Please type course Name");
         Scanner a = new Scanner(System.in);
-        String courseName = a.next();
+
+        System.out.println("Input your course requirements:");
+        System.out.println("Input course Name:");
+
+        String courseName = a.nextLine().replaceAll(" ", "");
         courseRequirements.setCourseName(courseName);
 
-        System.out.println("Please type start time");
+        System.out.println("Input start time dd/mm/yyyy");
         Scanner b = new Scanner(System.in);
-        String start_time = b.next();
+        String start_time = b.nextLine().replaceAll(" ", "");
         courseRequirements.setStart_time(start_time);
 
-        System.out.println("Please type course duration");
+        System.out.println("Input course duration dd/mm");
         Scanner c = new Scanner(System.in);
-        String duration = c.next();
+        String duration = c.nextLine().replaceAll(" ", "");
         courseRequirements.setDuration(duration);
 
-        System.out.println("Please type teacher's native language");
+        System.out.println("Input required subject");
         Scanner d = new Scanner(System.in);
-        String nativelanguage= d.next();
-        courseRequirements.setNativelanguage(nativelanguage);
+        String subject= d.nextLine().replaceAll(" ", "");
+        courseRequirements.setSubject(subject);
 
-        System.out.println("Please type courseDirector 's Id");
-        Scanner e = new Scanner(System.in);
-        int courseDirectorId= e.nextInt();
-        courseRequirements.setCourseDirectorId(courseDirectorId);
-
-        System.out.println("Please type teacher's teaching level");
+        System.out.println("Input required teacher's teaching level 1~5");
         Scanner f = new Scanner(System.in);
-        int teachinglevel= f.nextInt();
+        String teachinglevel= f.nextLine().replaceAll(" ", "");
         courseRequirements.setTeachinglevel(teachinglevel);
 
-        System.out.println("Please type teacher's student affinity");
+        System.out.println("Input required teacher's student affinity 1~5");
         Scanner g = new Scanner(System.in);
-        int studentaffinity= g.nextInt();
+        String studentaffinity= g.nextLine().replaceAll(" ", "");
         courseRequirements.setStudentaffinity(studentaffinity);
 
-        System.out.println("Please type courseDirector's Name");
-        Scanner h = new Scanner(System.in);
-        String courseDirectorName= h.next();
-        courseRequirements.setCourseDirectorName(courseDirectorName);
+        try {
+            FileWriter writer = new FileWriter("courses.txt", true);
+            writer.write("\n");
+            writer.write(courseRequirements.getCourseName() + " ");
+            writer.write(courseRequirements.getStart_time() + " ");
+            writer.write(courseRequirements.getDuration() + " ");
+            writer.write(courseRequirements.getSubject() + " ");
+            writer.write(courseRequirements.getTeachinglevel() + " ");
+            writer.write(courseRequirements.getStudentaffinity());
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException ex) {
+            System.out.println("An error occurred while writing to local file.");
+            ex.printStackTrace();
+        }
 
     }
 }

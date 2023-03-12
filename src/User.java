@@ -2,10 +2,8 @@ public abstract class User {
     private int userId ;
     private String name;
     private String password;
-    private String email;
 
-
-    public abstract void login();//登陆方法
+//    public abstract void login();//登陆方法
 
 
     public int getUserId() {
@@ -32,11 +30,5 @@ public abstract class User {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }

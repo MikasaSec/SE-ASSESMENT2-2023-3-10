@@ -1,0 +1,5 @@
+ID Name Skill level studentAffinity roleCode(1.CourseDirector2.Administrator3.PartTimeTeacher)
+1 Jack English 3 2 1
+2 wang English 4 2 2
+3 lily English 1 2 3
+4 Jack Chinese 3 2 3

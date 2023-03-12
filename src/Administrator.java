@@ -35,7 +35,7 @@ public class Administrator extends User{
 
 
     public void selectPartTimeTeacher() {
-        String filePath = "filename.txt"; // 文件路径
+        String filePath = "users.txt"; // 文件路径
         List<String> dataList = new ArrayList<>(); // 创建一个 List 存储每一行数据
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {

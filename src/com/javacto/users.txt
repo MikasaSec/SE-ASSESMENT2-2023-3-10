@@ -1,0 +1,6 @@
+ID password Name Subject level studentAffinity roleCode(1.CourseDirector2.Administrator3.PartTimeTeacher)
+1 abc Jack Math 3 2 1
+2 abc Wang Chemistry 4 2 2
+3 abc Lily Physics 4 2 3
+4 abc Adam Music 6 2 3
+5 abc Owen PE 13 0 3

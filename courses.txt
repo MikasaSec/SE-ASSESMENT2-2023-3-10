@@ -1,4 +1,0 @@
-course startTime Duration subject Level Affinity
-science 11/11/2011 01/05 science 2 1
-math 01/01/1111 05/05 math 3 2
-physics 01/01/0000 00/00 physics 2 3

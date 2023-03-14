@@ -30,6 +30,7 @@ public class UserAction {
             //input password
             System.out.println("Please type in your password");
             password = input.next();
+            //validate if the ID exists and matches with correct password
             if (init.validate(ID, password)) {
                 break login;
             }
@@ -38,7 +39,7 @@ public class UserAction {
         //obtain user role with given ID and create specific user role using Polymorphism method
         User user = init.getUserRole(ID);
         if (user != null) {
-            //
+            //call run() method within specific user role
             init.run(user);
         }
     }

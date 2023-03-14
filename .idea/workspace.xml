@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a93223-c8b0-4d64-add1-6c06b6df7d1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1111.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AE2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/1111.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/courses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/META-INF/1111.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/action/UserAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/courses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/dao/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/dao/DaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/service/Administrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/service/CourseDirector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/service/CourseRequirements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/service/PartTimeTeacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/service/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/out/production/1111/com/javacto/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/action/UserAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/courses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/dao/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/dao/DaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/service/Administrator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/service/CourseDirector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/service/CourseRequirements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/service/PartTimeTeacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/service/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/src/com/javacto/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEAssesmentREREVISED/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/Administrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/CourseDirector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/CourseRequirements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/PartTimeTeacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/ReadWriteFiles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/Training.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SEAssesmentREREVISED/UserAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Administrator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CourseDirector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CourseRequirements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Master.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PartTimeTeacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadWriteFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Training.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserAction.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/javacto/action/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/action/UserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javacto/courses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/courses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javacto/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javacto/dao/DaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/dao/DaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javacto/service/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/service/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/javacto/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/javacto/users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

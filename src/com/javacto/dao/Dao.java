@@ -44,5 +44,5 @@ public interface Dao {
     /**
      * train teacher
      */
-    public void getTraining(String choice);
+    public void getTraining();
 }

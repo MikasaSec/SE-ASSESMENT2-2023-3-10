@@ -8,10 +8,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserAction {
-    //load existing data
     public static Dao init = new DaoImpl();
+    //load existing data
     public static ArrayList<String> userData = init.readFile("src/com/javacto/users.txt");
     public static ArrayList<String> courseData = init.readFile("src/com/javacto/courses.txt");
+
     public static void main(String[] args) {
 
         //welcome
@@ -19,7 +20,7 @@ public class UserAction {
         String ID;
         String password;
 
-        //user login, obtain user's ID
+        //user login and password verification
         login:
         while (true) {
             Scanner input = new Scanner(System.in);
@@ -29,13 +30,15 @@ public class UserAction {
             //input password
             System.out.println("Please type in your password");
             password = input.next();
-            if(init.validate(ID,password)){
+            if (init.validate(ID, password)) {
                 break login;
             }
         }
 
+        //obtain user role with given ID and create specific user role using Polymorphism method
         User user = init.getUserRole(ID);
         if (user != null) {
+            //
             init.run(user);
         }
     }

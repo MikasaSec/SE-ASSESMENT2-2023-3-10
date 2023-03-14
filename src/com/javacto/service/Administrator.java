@@ -10,6 +10,7 @@ public class Administrator extends User {
         Dao courseRequirements=new DaoImpl();
         courseRequirements.showCourseRequirements();
         courseRequirements.selectPartTimeTeacher();
+        courseRequirements.getTraining();
 
     }
 
